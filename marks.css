@@ -1,0 +1,86 @@
+.marks-container {
+  min-height: 100vh;
+  background: #f4f7fc;
+  padding: 40px;
+}
+
+.marks-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.marks-title {
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 25px;
+}
+
+/* Table */
+.marks-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.marks-table th {
+  background: #2563eb;
+  color: white;
+  padding: 14px;
+  text-align: center;
+}
+
+.marks-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.marks-table tr:hover {
+  background: #f8fafc;
+}
+
+/* Marks Badge */
+.marks-score {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Semester Badge */
+.semester-badge {
+  display: inline-block;
+  background: #f3e8ff;
+  color: #7e22ce;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 25px auto 0;
+  padding: 10px 24px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
