@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attendance-page {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.attendance-page h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Form */
+
+.attendance-page form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr auto;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.attendance-page select,
+.attendance-page input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.attendance-page form button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #0d47ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.attendance-page form button:hover {
+  background: #0037d6;
+}
+
+/* Table */
+
+.attendance-page table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.attendance-page th {
+  background: #0d47ff;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+.attendance-page td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.attendance-page tr:hover {
+  background: #f7f9ff;
+}
+
+/* Delete Button */
+
+.attendance-page td button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.attendance-page td button:hover {
+  background: #c82333;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .attendance-page form {
+    grid-template-columns: 1fr;
+  }
+
+  .attendance-page form button {
+    width: 100%;
+  }
+}
