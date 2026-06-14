@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.marks-container {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.marks-container h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+/* Form Layout */
+
+.marks-container form {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 15px;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.marks-container select,
+.marks-container input {
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.marks-container button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #0d47ff;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.marks-container button:hover {
+  background: #0037d6;
+}
+
+/* Table */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+table th {
+  background: #0d47ff;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+table td {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+table tr:hover {
+  background: #f7f9ff;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .marks-container form {
+    grid-template-columns: 1fr;
+  }
+
+  .marks-container button {
+    width: 100%;
+  }
+}
